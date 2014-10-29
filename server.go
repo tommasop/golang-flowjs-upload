@@ -42,7 +42,7 @@ func main() {
 	})
 
 	handler := handlers.LoggingHandler(os.Stdout, m)
-	http.ListenAndServe(":3000", handler)
+	http.ListenAndServe(":3001", handler)
 }
 
 type ByChunk []os.FileInfo
